@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -20,6 +19,7 @@ import com.newmoneyfun.asyncteam.fragment.MenuFragment.SLMenuListOnItemClickList
 import com.newmoneyfun.asyncteam.fragment.PagesFragment;
 import com.newmoneyfun.asyncteam.fragment.PhotosFragment;
 import com.newmoneyfun.asyncteam.fragment.WhatsHotFragment;
+import com.newmoneyfun.asyncteam.utils.Logger;
 
 public class MainActivity extends SlidingFragmentActivity implements SLMenuListOnItemClickListener{
 	
@@ -154,7 +154,7 @@ public class MainActivity extends SlidingFragmentActivity implements SLMenuListO
 	        mSlidingMenu.showContent();
 	    } else {  
 	        // error in creating fragment  
-	        Log.e("MainActivity", "Error in creating fragment");  
+	        Logger.e("MainActivity", "Error in creating fragment");  
 	    }  
 	}
 }
