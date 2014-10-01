@@ -25,6 +25,7 @@ public class MainActivity extends SlidingFragmentActivity implements SLMenuListO
 	
 	private SlidingMenu mSlidingMenu;
 	private ImageView iv_title_logo;
+	// today newmoneyfun add some code here
 	
 	@SuppressLint("NewApi")
 	@Override
