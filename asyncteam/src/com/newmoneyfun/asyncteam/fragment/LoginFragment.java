@@ -48,7 +48,7 @@ public class LoginFragment extends Fragment{
 		
 		iv_menu_left.setVisibility(View.GONE);
 		iv_menu_middle.setVisibility(View.GONE);
-		iv_menu_right.setVisibility(View.GONE);
+//		iv_menu_right.setVisibility(View.GONE);
 		
 		TextView tv_name=(TextView) lyout_top.findViewById(R.id.tv_title_name);
 		tv_name.setText("Login");

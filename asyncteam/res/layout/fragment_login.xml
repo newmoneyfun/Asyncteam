@@ -47,7 +47,7 @@
         <Button android:layout_width="100dip"
             android:layout_height="fill_parent"
             android:text="submit"
-            
+            android:textColor="@color/white"
             android:layout_alignParentRight="true"
             android:background="@drawable/btn_green_normal"/>
     </RelativeLayout>
