@@ -31,13 +31,6 @@ public class LoginFragment extends Fragment{
 				
 			}
 		});
-		
-//		if(et_account.isFocused()){
-//			et_account.setBackgroundDrawable(getActivity().getResources().getDrawable(R.drawable.text_bg_active));
-//		}else{
-//			et_account.setBackgroundDrawable(getActivity().getResources().getDrawable(R.drawable.text_bg_default));
-//		}
-		
 		showTopLayout();
 		return view;
 	}
