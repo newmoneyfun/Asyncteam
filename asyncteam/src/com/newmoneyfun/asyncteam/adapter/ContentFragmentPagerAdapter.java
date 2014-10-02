@@ -2,12 +2,12 @@ package com.newmoneyfun.asyncteam.adapter;
 
 import java.util.List;
 
-import com.newmoneyfun.asyncteam.entity.ContentBean;
-import com.newmoneyfun.asyncteam.fragment.TestContentFragment;
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.newmoneyfun.asyncteam.entity.ContentBean;
+import com.newmoneyfun.asyncteam.fragment.TestContentFragment;
 
 public class ContentFragmentPagerAdapter extends FragmentPagerAdapter {
 

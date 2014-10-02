@@ -20,7 +20,6 @@ import com.newmoneyfun.asyncteam.fragment.PagesFragment;
 import com.newmoneyfun.asyncteam.fragment.PhotosFragment;
 import com.newmoneyfun.asyncteam.fragment.WhatsHotFragment;
 import com.newmoneyfun.asyncteam.utils.Logger;
-
 public class MainActivity extends SlidingFragmentActivity implements SLMenuListOnItemClickListener{
 	
 	private SlidingMenu mSlidingMenu;
@@ -61,7 +60,7 @@ public class MainActivity extends SlidingFragmentActivity implements SLMenuListO
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.left_menu, new MenuFragment());
 //        fragmentTransaction.replace(R.id.right_menu, new RightMenuFragment());
-        fragmentTransaction.replace(R.id.content, new HomeFragment());
+        fragmentTransaction.replace(R.id.flyout_main_content, new HomeFragment());
         
         fragmentTransaction.commit();
         
@@ -148,7 +147,7 @@ public class MainActivity extends SlidingFragmentActivity implements SLMenuListO
 	    if (fragment != null) {  
 	        FragmentManager fragmentManager =getSupportFragmentManager();
 	        fragmentManager.beginTransaction()  
-	                .replace(R.id.content, fragment).commit();  
+	                .replace(R.id.flyout_main_content, fragment).commit();  
 	        // update selected item and title, then close the drawer  
 	        setTitle(title);
 	        mSlidingMenu.showContent();

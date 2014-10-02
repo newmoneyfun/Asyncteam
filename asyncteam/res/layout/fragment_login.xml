@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    
+    <EditText 
+        android:id="@+id/et_login_account"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+       android:layout_marginLeft="20dip"
+       android:layout_marginRight="20dip"
+         android:paddingLeft="15dip"
+          android:maxLength="30"
+          style="@style/my_edittext_style"
+         android:hint="@string/str_login_account"
+        />
+    
+    <EditText 
+        android:id="@+id/et_login_password"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+       android:layout_marginLeft="20dip"
+       android:layout_marginRight="20dip"
+        android:paddingLeft="15dip"
+         style="@style/my_edittext_style"
+        android:maxLength="18"
+        android:inputType="textPassword"
+        android:hint="@string/str_login_password"
+        />
+    
+
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_green"/>
+    </RelativeLayout>
+    
+    
+
+    
+    
+    
+
+</LinearLayout>

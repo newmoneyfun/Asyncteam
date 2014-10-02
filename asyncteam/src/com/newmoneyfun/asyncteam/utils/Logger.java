@@ -13,7 +13,7 @@ public class Logger {
 	/***是否显示log*/
 	private static final boolean DEBUG_LOG=true;
 	/***显示的log等级*/
-	private static final int DEBUG_LEVEL=-1;
+	private static final int DEBUG_LEVEL=7;
 	
 	private static final int LOG_VERBOSE=1;
 	private static final int LOG_DEBUG=2;

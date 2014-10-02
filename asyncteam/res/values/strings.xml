@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">首页</string>
+    <string name="app_name">asyncteam</string>
     <string name="refresh">刷新</string>
     <string name="person">个人中心</string>
     <string name="sliding_title">SlidingMenu Demo</string>
     <string name="desc_list_item_icon">SlidingMenu</string>
+    <!-- ********************************************************* -->
+    <string name="str_login_account">account or email</string>
+    <string name="str_login_password">password</string>
 
 </resources>

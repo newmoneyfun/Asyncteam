@@ -3,18 +3,22 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent" >
+    
     <LinearLayout
-        android:id="@+id/llayout" 
+        android:id="@+id/llyout_welcome_top" 
         android:orientation="vertical"
         android:layout_width="match_parent" 
     	android:layout_height="wrap_content" >
         <include layout="@layout/top1"/>
     </LinearLayout>
-     
      <FrameLayout 
-          android:id="@+id/flyout_main_content"
+          android:id="@+id/flyout_welcome_container"
           android:layout_width="match_parent"
           android:layout_height="match_parent" >
       </FrameLayout>
+    
+    
+    </LinearLayout>
+   
       
-     </LinearLayout>
+     
