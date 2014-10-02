@@ -1,3 +1,0 @@
-asyncteam  open project
-the asyncteam is the main app sourse of the open project.
-the library is the lib of slidingmenu of the app.
