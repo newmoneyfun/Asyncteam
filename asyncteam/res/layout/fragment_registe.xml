@@ -22,10 +22,10 @@
         android:id="@+id/et_login_password"
         android:layout_width="fill_parent"
         android:layout_height="45dip"
-       android:layout_marginLeft="30dip"
-       android:layout_marginRight="30dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
         android:paddingLeft="15dip"
-         style="@style/my_edittext_style"
+        style="@style/my_edittext_style"
         android:maxLength="18"
         android:inputType="textPassword"
         android:hint="@string/str_login_password"
@@ -34,7 +34,7 @@
 
     <RelativeLayout android:layout_width="fill_parent"
         android:layout_marginLeft="30dip"
-            android:layout_marginRight="30dip"
+        android:layout_marginRight="30dip"
         android:layout_height="45dip">
         <CheckBox android:layout_width="wrap_content"
             android:layout_height="fill_parent"
@@ -44,9 +44,7 @@
             />
         
         
-        <Button
-            android:id="@+id/btn_login_submit" 
-            android:layout_width="100dip"
+        <Button android:layout_width="100dip"
             android:layout_height="fill_parent"
             android:text="submit"
             android:textColor="@color/white"
