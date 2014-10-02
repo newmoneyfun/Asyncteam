@@ -1,2 +1,5 @@
-Asyncteam ����˵����
+﻿Asyncteam 进度
 version:1.4.1008
+1、创建部分界面
+2、增加登录和注册
+
