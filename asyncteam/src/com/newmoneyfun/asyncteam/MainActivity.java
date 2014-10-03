@@ -148,7 +148,6 @@ public class MainActivity extends SlidingFragmentActivity implements SLMenuListO
 	        FragmentManager fragmentManager =getSupportFragmentManager();
 	        fragmentManager.beginTransaction()  
 	                .replace(R.id.flyout_main_content, fragment).commit();  
-	        // update selected item and title, then close the drawer  
 	        setTitle(title);
 	        mSlidingMenu.showContent();
 	    } else {  

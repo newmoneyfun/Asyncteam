@@ -3,6 +3,7 @@ package com.newmoneyfun.asyncteam.fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,16 +41,17 @@ public class RegisteFragment extends Fragment implements ITopMenus {
 	}
 
 	@Override
-	public void dalTopLogo(ImageView v_logo) {
+	public void dalTopLogo(final ImageView v_logo) {
 		v_logo.setBackgroundDrawable(getActivity().getResources().getDrawable(R.drawable.ic_launcher));
 		v_logo.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-				FragmentTransaction mTransaction=getFragmentManager().beginTransaction();
+				FragmentManager mFragManager=getFragmentManager();
+				FragmentTransaction mTransaction=mFragManager.beginTransaction();
 				mTransaction.replace(R.id.flyout_welcome_container ,new LoginFragment());
 				mTransaction.commit();
-				
+				v_logo.setOnClickListener(null);
 			}
 		});
 	}
@@ -73,7 +75,7 @@ public class RegisteFragment extends Fragment implements ITopMenus {
 
 	@Override
 	public void dalMenuRight(ImageView v_menu_right) {
-		v_menu_right.setVisibility(View.GONE);
+		v_menu_right.setVisibility(View.VISIBLE);
 		v_menu_right.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -91,8 +93,9 @@ public class RegisteFragment extends Fragment implements ITopMenus {
 				}
 			}
 		});
-		
 	}
+	
+	
 	
 	
 

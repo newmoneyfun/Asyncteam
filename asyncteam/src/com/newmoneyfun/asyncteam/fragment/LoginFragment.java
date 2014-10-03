@@ -89,7 +89,7 @@ public class LoginFragment extends Fragment implements ITopMenus {
 			@Override
 			public void onClick(View v) {
 				FragmentTransaction mTransaction=getFragmentManager().beginTransaction();
-				mTransaction.replace(R.id.flyout_welcome_container ,new RegisteFragment());
+				mTransaction.replace(R.id.flyout_welcome_container ,new RegisteFragment(),"registe");
 				mTransaction.commit();
 				
 			}
