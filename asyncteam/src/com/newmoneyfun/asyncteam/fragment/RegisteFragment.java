@@ -47,18 +47,24 @@ public class RegisteFragment extends Fragment implements ITopMenus {
 			
 			@Override
 			public void onClick(View v) {
-				FragmentManager mFragManager=getFragmentManager();
-				FragmentTransaction mTransaction=mFragManager.beginTransaction();
-				mTransaction.replace(R.id.flyout_welcome_container ,new LoginFragment());
-				mTransaction.commit();
+				replaceFragment();
 				v_logo.setOnClickListener(null);
 			}
 		});
 	}
 
 	@Override
-	public void dalTopTitle(TextView tv_title) {
+	public void dalTopTitle(final TextView tv_title) {
 		tv_title.setText("Registe");
+//		tv_title.setOnClickListener(new OnClickListener() {
+//			
+//			@Override
+//			public void onClick(View v) {
+//				replaceFragment();
+//				tv_title.setOnClickListener(null);
+//				
+//			}
+//		});
 	}
 
 	@Override
@@ -93,6 +99,13 @@ public class RegisteFragment extends Fragment implements ITopMenus {
 				}
 			}
 		});
+	}
+	
+	private void replaceFragment(){
+		FragmentManager mFragManager=getFragmentManager();
+		FragmentTransaction mTransaction=mFragManager.beginTransaction();
+		mTransaction.replace(R.id.flyout_welcome_container ,new LoginFragment());
+		mTransaction.commit();
 	}
 	
 	
