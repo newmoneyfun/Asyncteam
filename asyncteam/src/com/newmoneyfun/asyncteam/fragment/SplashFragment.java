@@ -7,8 +7,12 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.newmoneyfun.asyncteam.R;
+import com.newmoneyfun.asyncteam.interfaceabstract.ITopMenus;
 
 /**
  * the first view of the app
@@ -19,7 +23,7 @@ import com.newmoneyfun.asyncteam.R;
  * @author newmoneyfun
  *
  */
-public class SplashFragment extends Fragment{
+public class SplashFragment extends Fragment implements ITopMenus{
 	
 	private final int SPLASH_DISPLAY_LENGTH=2500;
 
@@ -42,6 +46,45 @@ public class SplashFragment extends Fragment{
 		}
 		
 	}
+
+	@Override
+	public void showOrHideMenuLayout(LinearLayout v_layout) {
+		v_layout.setVisibility(View.GONE);
+		
+	}
+
+	@Override
+	public void dalTopBack(ImageView v_back) {
+		
+	}
+
+	@Override
+	public void dalTopLogo(ImageView v_logo) {
+		
+	}
+
+	@Override
+	public void dalTopTitle(TextView tv_title) {
+		
+	}
+
+	@Override
+	public void dalMenuLeft(ImageView v_menu_left) {
+		
+	}
+
+	@Override
+	public void dalMenuMiddle(ImageView v_menu_middle) {
+		
+	}
+
+	@Override
+	public void dalMenuRight(ImageView v_menu_right) {
+		
+	}
+
+	
+
 	
 	
 	

@@ -7,28 +7,29 @@
     android:layout_height="match_parent">
     
     <EditText 
-        android:id="@+id/et_login_account"
-        android:layout_width="fill_parent"
-        android:layout_height="45dip"
-       android:layout_marginLeft="30dip"
-       android:layout_marginRight="30dip"
-         android:paddingLeft="15dip"
-          android:maxLength="30"
-          style="@style/my_edittext_style"
-         android:hint="@string/str_login_account"
+        android:id="@+id/et_registe_account"
+        android:maxLength="30"
+        style="@style/edit_style"
+        android:hint="@string/str_login_account"
         />
     
     <EditText 
-        android:id="@+id/et_login_password"
-        android:layout_width="fill_parent"
-        android:layout_height="45dip"
-        android:layout_marginLeft="30dip"
-        android:layout_marginRight="30dip"
-        android:paddingLeft="15dip"
-        style="@style/my_edittext_style"
-        android:maxLength="18"
+        android:id="@+id/et_registe_password"
+        style="@style/edit_style"
         android:inputType="textPassword"
         android:hint="@string/str_login_password"
+        />
+     <EditText 
+        android:id="@+id/et_registe_password_confirm"
+        style="@style/edit_style"
+        android:inputType="textPassword"
+        android:hint="@string/str_login_password_confrim"
+        />
+       <EditText 
+        android:id="@+id/et_registe_email"
+        style="@style/edit_style"
+        android:inputType="textEmailAddress"
+        android:hint="@string/str_login_email"
         />
     
 
@@ -36,15 +37,12 @@
         android:layout_marginLeft="30dip"
         android:layout_marginRight="30dip"
         android:layout_height="45dip">
-        <CheckBox android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:checked="true"
-            android:text="remember pwd"
-            android:layout_alignParentLeft="true"
-            />
         
         
-        <Button android:layout_width="100dip"
+        
+        <Button
+            android:id="@+id/btn_registe_submit"
+            android:layout_width="100dip"
             android:layout_height="fill_parent"
             android:text="submit"
             android:textColor="@color/white"

@@ -3,6 +3,7 @@ package com.newmoneyfun.asyncteam.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -15,16 +16,17 @@ import android.widget.TextView;
 
 import com.newmoneyfun.asyncteam.MainActivity;
 import com.newmoneyfun.asyncteam.R;
+import com.newmoneyfun.asyncteam.interfaceabstract.ITopMenus;
 
-public class LoginFragment extends Fragment{
+public class LoginFragment extends Fragment implements ITopMenus {
 	
+
 	private EditText et_account;
 	private EditText et_password;
 	private Button btn_login;
 
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_login, container, false); 
 		et_account=(EditText) view.findViewById(R.id.et_login_account);
 		et_password=(EditText) view.findViewById(R.id.et_login_password);
@@ -41,28 +43,60 @@ public class LoginFragment extends Fragment{
 				}
 			}
 		});
-		showTopLayout();
 		return view;
 	}
-	
-	private void showTopLayout(){
-		LinearLayout lyout_top=(LinearLayout) getActivity().findViewById(R.id.llyout_welcome_top);
-		lyout_top.setVisibility(View.VISIBLE);
+
+	@Override
+	public void showOrHideMenuLayout(LinearLayout v_layout) {
+		v_layout.setVisibility(View.VISIBLE);
 		
-		ImageView iv_logo=(ImageView) lyout_top.findViewById(R.id.imgv_title_logo);
-		iv_logo.setBackgroundDrawable(getActivity().getResources().getDrawable(R.drawable.ic_launcher));
-		
-		ImageView iv_menu_left=(ImageView) lyout_top.findViewById(R.id.imgv_title_menu_left);
-		ImageView iv_menu_middle=(ImageView) lyout_top.findViewById(R.id.imgv_title_menu_middle);
-		ImageView iv_menu_right=(ImageView) lyout_top.findViewById(R.id.imgv_title_menu_right);
-		
-		iv_menu_left.setVisibility(View.GONE);
-		iv_menu_middle.setVisibility(View.GONE);
-//		iv_menu_right.setVisibility(View.GONE);
-		
-		TextView tv_name=(TextView) lyout_top.findViewById(R.id.tv_title_name);
-		tv_name.setText("Login");
 	}
+
+	@Override
+	public void dalTopBack(ImageView v_back) {
+		v_back.setVisibility(View.GONE);
+	}
+
+	@Override
+	public void dalTopLogo(ImageView v_logo) {
+		v_logo.setBackgroundDrawable(getActivity().getResources().getDrawable(R.drawable.ic_launcher));
+		
+	}
+
+	@Override
+	public void dalTopTitle(TextView tv_title) {
+		tv_title.setText("Login");
+		
+	}
+
+	@Override
+	public void dalMenuLeft(ImageView v_menu_left) {
+		v_menu_left.setVisibility(View.GONE);
+		
+	}
+
+	@Override
+	public void dalMenuMiddle(ImageView v_menu_middle) {
+		v_menu_middle.setVisibility(View.GONE);
+		
+	}
+
+	@Override
+	public void dalMenuRight(ImageView v_menu_right) {
+		v_menu_right.setVisibility(View.VISIBLE);
+		v_menu_right.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				FragmentTransaction mTransaction=getFragmentManager().beginTransaction();
+				mTransaction.replace(R.id.flyout_welcome_container ,new RegisteFragment());
+				mTransaction.commit();
+				
+			}
+		});
+		
+	}
+
 	
 	
 	
