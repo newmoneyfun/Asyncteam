@@ -8,15 +8,15 @@ import android.view.ViewGroup;
 
 import com.newmoneyfun.asyncteam.R;
 
-public class CommunityFragment extends Fragment {
+public class TextLineFragment extends Fragment {
 	
-	public CommunityFragment(){}
+	public TextLineFragment(){}
 	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.fragment_community, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_text_line, container, false);
          
         return rootView;
     }

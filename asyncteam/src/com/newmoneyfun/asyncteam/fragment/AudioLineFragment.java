@@ -8,15 +8,15 @@ import android.view.ViewGroup;
 
 import com.newmoneyfun.asyncteam.R;
 
-public class FindPeopleFragment extends Fragment {
+public class AudioLineFragment extends Fragment {
 	
-	public FindPeopleFragment(){}
+	public AudioLineFragment(){}
 	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.fragment_find_people, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_audio_line, container, false);
          
         return rootView;
     }

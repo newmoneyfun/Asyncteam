@@ -17,9 +17,11 @@ public class NavDrawerListAdapter extends BaseAdapter {
 	
 	private List<NavDrawerItem> navDrawerItems;
 	LayoutInflater mInfalter = null;
+	Context context;
 	
 	public NavDrawerListAdapter(Context context, List<NavDrawerItem> navDrawerItems){
 		this.navDrawerItems = navDrawerItems;
+		this.context=context;
 		mInfalter = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 	}
 
@@ -52,7 +54,7 @@ public class NavDrawerListAdapter extends BaseAdapter {
         	holder=(Holder) convertView.getTag();
         }
          
-		holder.imgIcon.setImageResource(navDrawerItems.get(position).getIcon());        
+		holder.imgIcon.setBackgroundDrawable(context.getResources().getDrawable(navDrawerItems.get(position).getIcon()));        
 		holder.txtTitle.setText(navDrawerItems.get(position).getTitle());
         
         // displaying count

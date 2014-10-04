@@ -8,15 +8,15 @@ import android.view.ViewGroup;
 
 import com.newmoneyfun.asyncteam.R;
 
-public class PagesFragment extends Fragment {
+public class VideoLineFragment extends Fragment {
 	
-	public PagesFragment(){}
+	public VideoLineFragment(){}
 	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.fragment_pages, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_video_line, container, false);
          
         return rootView;
     }

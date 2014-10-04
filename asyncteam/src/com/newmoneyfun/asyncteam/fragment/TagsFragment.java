@@ -8,16 +8,16 @@ import android.view.ViewGroup;
 
 import com.newmoneyfun.asyncteam.R;
 
-public class WhatsHotFragment extends Fragment {
+public class TagsFragment extends Fragment {
 	
-	public WhatsHotFragment(){}
+	public TagsFragment(){}
 	
 	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.fragment_whats_hot, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_tags_show, container, false);
          
         return rootView;
     }

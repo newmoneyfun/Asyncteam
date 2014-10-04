@@ -11,14 +11,14 @@ import android.widget.ImageView;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
-import com.newmoneyfun.asyncteam.fragment.CommunityFragment;
-import com.newmoneyfun.asyncteam.fragment.FindPeopleFragment;
+import com.newmoneyfun.asyncteam.fragment.AudioLineFragment;
+import com.newmoneyfun.asyncteam.fragment.TextLineFragment;
 import com.newmoneyfun.asyncteam.fragment.HomeFragment;
 import com.newmoneyfun.asyncteam.fragment.MenuFragment;
 import com.newmoneyfun.asyncteam.fragment.MenuFragment.SLMenuListOnItemClickListener;
-import com.newmoneyfun.asyncteam.fragment.PagesFragment;
-import com.newmoneyfun.asyncteam.fragment.PhotosFragment;
-import com.newmoneyfun.asyncteam.fragment.WhatsHotFragment;
+import com.newmoneyfun.asyncteam.fragment.VideoLineFragment;
+import com.newmoneyfun.asyncteam.fragment.PictureLineFragment;
+import com.newmoneyfun.asyncteam.fragment.TagsFragment;
 import com.newmoneyfun.asyncteam.utils.Logger;
 public class MainActivity extends SlidingFragmentActivity implements SLMenuListOnItemClickListener{
 	
@@ -126,19 +126,19 @@ public class MainActivity extends SlidingFragmentActivity implements SLMenuListO
 	        fragment = new HomeFragment();  
 	        break;  
 	    case 1:  
-	        fragment = new FindPeopleFragment();  
+	        fragment = new TextLineFragment();  
 	        break;  
 	    case 2:  
-	        fragment = new PhotosFragment();  
+	        fragment = new PictureLineFragment();  
 	        break;  
 	    case 3:  
-	        fragment = new CommunityFragment();  
+	        fragment = new AudioLineFragment();  
 	        break;  
 	    case 4:  
-	        fragment = new PagesFragment();  
+	        fragment = new VideoLineFragment();  
 	        break;  
 	    case 5:  
-	        fragment = new WhatsHotFragment();  
+	        fragment = new TagsFragment();  
 	        break;  
 	    default:  
 	        break;  
