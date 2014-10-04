@@ -58,7 +58,7 @@ public class MainActivity extends SlidingFragmentActivity implements SLMenuListO
         
         //设置 SlidingMenu 内容
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.left_menu, new MenuFragment());
+        fragmentTransaction.replace(R.id.left_menu1, new MenuFragment());
 //        fragmentTransaction.replace(R.id.right_menu, new RightMenuFragment());
         fragmentTransaction.replace(R.id.flyout_main_content, new HomeFragment());
         
@@ -146,9 +146,9 @@ public class MainActivity extends SlidingFragmentActivity implements SLMenuListO
 	  
 	    if (fragment != null) {  
 	        FragmentManager fragmentManager =getSupportFragmentManager();
-	        fragmentManager.beginTransaction()  
-	                .replace(R.id.flyout_main_content, fragment).commit();  
+	        fragmentManager.beginTransaction().replace(R.id.flyout_main_content, fragment).commit();  
 	        setTitle(title);
+	       
 	        mSlidingMenu.showContent();
 	    } else {  
 	        // error in creating fragment  
