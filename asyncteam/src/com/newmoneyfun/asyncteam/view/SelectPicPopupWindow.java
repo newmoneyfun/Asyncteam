@@ -59,6 +59,10 @@ public class SelectPicPopupWindow extends PopupWindow {
 		});
 
 	}
+	
+	// public void uploadImage2( ){
+	// menuWindow2 = new SysSetPopupWindow(this, handler);
+	// menuWindow2.showAtLocation(this.findViewById(R.id.set), Gravity.TOP|Gravity.RIGHT, 5, 3+ly_main_top.getHeight()+getWindow().findViewById(Window.ID_ANDROID_CONTENT).getTop()); //设置layout在PopupWindow中显示的位置
 	public interface IInter{
 		
 		
